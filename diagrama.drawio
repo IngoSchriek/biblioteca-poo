@@ -1,0 +1,153 @@
+<mxfile host="65bd71144e">
+    <diagram name="Diagrama de Classes Biblioteca" id="0">
+        <mxGraphModel dx="679" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Livro" style="swimlane;startSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="50" width="170" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="titulo: str" style="text" parent="2" vertex="1">
+                    <mxGeometry y="20" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="autor: str" style="text" parent="2" vertex="1">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ano: int" style="text" parent="2" vertex="1">
+                    <mxGeometry y="60" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="salvar()" style="text" parent="2" vertex="1">
+                    <mxGeometry y="100" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="to_dict()" style="text" parent="2" vertex="1">
+                    <mxGeometry y="120" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="________________________" style="text" vertex="1" parent="2">
+                    <mxGeometry y="70" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="LivroDigital" style="swimlane;startSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="50" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="formato: str" style="text" parent="9" vertex="1">
+                    <mxGeometry y="20" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="to_dict()" style="text" parent="9" vertex="1">
+                    <mxGeometry y="60" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="________________________" style="text" vertex="1" parent="9">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="LivroFisico" style="swimlane;startSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="50" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="numero_paginas: int" style="text" parent="13" vertex="1">
+                    <mxGeometry y="20" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="to_dict()" style="text" parent="13" vertex="1">
+                    <mxGeometry y="60" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="________________________" style="text" vertex="1" parent="13">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=none;html=1;strokeWidth=1;startArrow=diamondThin;startFill=0;endArrow=open;endFill=0;startSize=14;endSize=12;" edge="1" parent="1" source="17" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Biblioteca" style="swimlane;startSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="250" width="160" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="livros: List[Livro]" style="text" parent="17" vertex="1">
+                    <mxGeometry y="20" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="adicionar_livro()" style="text" parent="17" vertex="1">
+                    <mxGeometry y="60" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="listar_livros()" style="text" parent="17" vertex="1">
+                    <mxGeometry y="80" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="salvar_livros()" style="text" parent="17" vertex="1">
+                    <mxGeometry y="100" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="carregar_livros()" style="text" parent="17" vertex="1">
+                    <mxGeometry y="120" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="________________________" style="text" vertex="1" parent="17">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="BibliotecaInterface" style="swimlane;startSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="250" width="300" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="biblioteca: Biblioteca" style="text" parent="24" vertex="1">
+                    <mxGeometry y="20" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="root: tk.Tk" style="text" parent="24" vertex="1">
+                    <mxGeometry y="40" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="titulo_label: tk.Label" style="text" parent="24" vertex="1">
+                    <mxGeometry y="60" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="titulo_entry: tk.Entry" style="text" parent="24" vertex="1">
+                    <mxGeometry y="80" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="autor_label: tk.Label" style="text" parent="24" vertex="1">
+                    <mxGeometry y="100" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="autor_entry: tk.Entry" style="text" parent="24" vertex="1">
+                    <mxGeometry y="120" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ano_label: tk.Label" style="text" parent="24" vertex="1">
+                    <mxGeometry y="140" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="ano_entry: tk.Entry" style="text" parent="24" vertex="1">
+                    <mxGeometry y="160" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="formato_label: tk.Label" style="text" parent="24" vertex="1">
+                    <mxGeometry y="180" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="formato_entry: tk.Entry" style="text" parent="24" vertex="1">
+                    <mxGeometry y="200" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="paginas_label: tk.Label" style="text" parent="24" vertex="1">
+                    <mxGeometry y="220" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="paginas_entry: tk.Entry" style="text" parent="24" vertex="1">
+                    <mxGeometry y="240" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="add_livro_button: tk.Button" style="text" parent="24" vertex="1">
+                    <mxGeometry y="260" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="list_livros_button: tk.Button" style="text" parent="24" vertex="1">
+                    <mxGeometry y="280" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="output_text: tk.Text" style="text" parent="24" vertex="1">
+                    <mxGeometry y="300" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;startSize=6;endSize=12;" parent="1" source="2" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeWidth=1;endSize=12;" parent="1" source="2" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="430" y="180"/>
+                            <mxPoint x="430" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;endArrow=diamondThin;endFill=1;strokeWidth=1;startSize=12;endSize=14;startArrow=open;startFill=0;" parent="1" source="18" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="410" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="250" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="0..*" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="190" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
